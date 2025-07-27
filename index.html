@@ -2,22 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Market Chart Pattern Matcher</title>
+    <title>Candlestick Matcher</title>
     <style>
         html, body {
             margin: 0;
             padding: 0;
             height: 100%;
             overflow: hidden;
+            font-family: Arial, sans-serif;
         }
+
         iframe {
             width: 100%;
-            height: 100%;
+            height: calc(100% - 60px); /* Reserve space for footer */
             border: none;
+        }
+
+        footer {
+            height: 60px;
+            background-color: #1e1e1e;
+            color: #eee;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #fbb034;
+            margin: 0 12px;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <iframe src="https://candlestick-matcher-177019727195.us-central1.run.app/" allowfullscreen></iframe>
+
+    <footer>
+        <a href="https://www.linkedin.com/in/daoud-daoud/" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/Daoud-Daoud" target="_blank">GitHub</a> |
+        <a href="mailto:daoud.tradting7@gmail.com">Email</a>
+    </footer>
 </body>
 </html>
